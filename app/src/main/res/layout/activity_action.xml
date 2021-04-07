@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgnyabro"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="30dp"
+        android:background="#c2c2a3"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="80dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+
+            <Button
+                android:id="@+id/bt_insert2"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="12dp"
+                android:background="#00264d"
+                android:drawableRight="@drawable/insert2"
+                android:onClick="insert"
+                android:text="Tambahkan Data Mahasiswa"
+                android:textAllCaps="false"
+                android:textColor="#c2c2a3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_update"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="12dp"
+                android:background="#00264d"
+                android:drawableRight="@drawable/update3"
+                android:onClick="update"
+                android:text="Mengubah Data Mahasiswa"
+                android:textAllCaps="false"
+                android:textColor="#c2c2a3"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/bt_delete"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="12dp"
+                android:background="#00264d"
+                android:drawableRight="@drawable/delete2"
+                android:onClick="delete"
+                android:text="Menghapus Data Mahasiswa"
+                android:textAllCaps="false"
+                android:textColor="#c2c2a3"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:id="@+id/bt_logout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:background="#00264d"
+                android:drawableLeft="@drawable/back3"
+                android:onClick="logout"
+                android:text="Kembali"
+                android:textAllCaps="false"
+                android:textColor="#c2c2a3"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/background_profile"
+        android:elevation="4dp"
+        android:src="@drawable/pilihan3"
+
+        />
+
+ </RelativeLayout>
+

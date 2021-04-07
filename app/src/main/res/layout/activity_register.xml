@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgnyabro"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="AKUN MAHASISWA"
+        android:textColor="#BD9678"
+        android:textColorHint="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="249dp"
+        android:background="#c2c2a3"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="80dp"
+
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+
+            <EditText
+                android:id="@+id/edit_user2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/username_login2"
+                android:hint="NIM"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edit_pass2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/password_login2"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_register2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:background="#00264d"
+            android:onClick="login"
+            android:text="DAFTAR SEKARANG"
+            android:textAllCaps="false"
+            android:textColor="#c2c2a3"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="122dp"
+        android:background="@drawable/background_profile"
+        android:elevation="4dp"
+
+        android:src="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="465dp"
+        android:text="Daftar akun Mahasiswa(Back jika sudah terdaftar)"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="21dp"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textDB10"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/user_profile_photo"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="260dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Daftar Akun Mahasiswa  :"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3"
+
+        />
+
+</RelativeLayout>
+

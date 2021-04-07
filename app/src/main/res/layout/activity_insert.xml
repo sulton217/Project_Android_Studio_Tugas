@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert"
+    android:background="@drawable/bgnyabro"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="TAMBAHKAN DATA MAHASISWA"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDB"
+        android:layout_width="325dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Isi Database :"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3" />
+
+    <EditText
+        android:id="@+id/edit_user3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/username3"
+        android:ems="10"
+        android:hint="NAMA"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3" />
+
+    <EditText
+    android:id="@+id/edit_pass3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edit_user3"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:drawableLeft="@drawable/password3"
+    android:ems="10"
+    android:hint="NomorHP"
+    android:inputType="numberDecimal"
+    android:textAlignment="center"
+    android:textColor="#0A90D3"
+    android:textColorHint="#0A90D3" />
+
+    <EditText
+        android:id="@+id/edit_jurusan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_pass3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/jurusanfix"
+        android:ems="10"
+        android:hint="Jurusan"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#0A90D3"
+        android:textColorHint="#0A90D3" />
+
+
+    <Button
+        android:id="@+id/bt_insert2"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_jurusan3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_fix"
+        android:onClick="insert"
+        android:text="masukkan"
+        android:textAlignment="center"
+        android:textColor="#000080"
+        android:textColorHint="#c2c2a3"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_logout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_insert2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_btn_fix"
+        android:onClick="logout"
+        android:text="kembali"
+        android:textAlignment="center"
+        android:textColor="#000080"
+        android:textColorHint="#c2c2a3"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
